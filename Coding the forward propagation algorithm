@@ -1,0 +1,16 @@
+https://campus.datacamp.com/courses/deep-learning-in-python/basics-of-deep-learning-and-neural-networks?ex=4
+
+# Calculate node 0 value: node_0_value
+node_0_value = (input_data * weights['node_0']).sum()
+print(node_0_value)
+# Calculate node 1 value: node_1_value
+node_1_value = (input_data * weights['node_1']). sum()
+print(node_1_value)
+# Put node values into array: hidden_layer_outputs
+hidden_layer_outputs = np.array([node_0_value, node_1_value])
+
+# Calculate output: output
+output = (hidden_layer_outputs * weights['output']).sum()
+
+# Print output
+print(output)
