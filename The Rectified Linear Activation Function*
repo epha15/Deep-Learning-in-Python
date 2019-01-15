@@ -1,11 +1,17 @@
-n "activation function" is a function applied at each node. It converts the node's input into some output.
+#an "activation function" is a function applied at each node. It converts the node's input into some output.
 
-The rectified linear activation function (called ReLU) has been shown to lead to very high-performance networks.
-This function takes a single number as an input, returning 0 if the input is negative, and the input if the input is positive.
+#The rectified linear activation function (called ReLU) has been shown to lead to very high-performance networks.
+#This function takes a single number as an input, returning 0 if the input is negative, and the input if the input is positive.
 
-Here are some examples:
-relu(3) = 3 
-relu(-3) = 0 
+#Here are some examples:
+#relu(3) = 3 
+#relu(-3) = 0
+
+#input data = array([3,5])
+#weights = {'node_0': array([2, 4]), 'node_1': array([ 4, -5]), 'output': array([2, 7])}
+# node 0 = 3*2+ 5*4 = 26
+# node 1 = 3*4+5*-5 = 0 (relu)
+# output = 26*2 + 0*7 = 52
 
 def relu(input):
     '''Define your relu activation function here'''
